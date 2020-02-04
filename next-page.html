@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic|Montserrat:400,700|Cardo:400italic|Advent+Pro:100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="next-page.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+/*--- NAVBAR ---*/
+.navbar-default { font-family: geneva; background-image:linear-gradient(135deg, #6D17CB, #2876F9); border-bottom-color: skyblue; height: 60px; margin-bottom: 0; }
+.navbar-header .navbar-toggle { margin-top: 12px; }
+.navbar-header .navbar-brand { letter-spacing: -0.03em; height: 60px; padding: 30px 10px 0 10px; font-size: 36px; line-height: 0px; font-weight: 700; color: #FFFAFA; white-space: nowrap; }
+.navbar-default .navbar-brand:focus { color: #111; }
+.navbar-default .navbar-nav { background: transparent; margin-top: 0; }
+.navbar-default .navbar-nav>li>a { color: #F4F5E2; padding: 10px; border-bottom: 1px solid #DFDFDF; }
+.navbar-default .navbar-nav>li>a.selected { color: #111; }
+.navbar-default a.navbar-brand:hover .navbar-default .navbar-nav>li>a:hover { background-color: #DFDFDF; }
+.navbar-default .navbar-brand:hover { color: #E5E4E2; }
+
+@media screen and (min-width: 768px) {
+  .navbar-default { height: 100px; }
+  .navbar-header { width: 100%; }
+  .navbar-header .navbar-brand { height: 70px; padding: 40px 0 0 15px; font-size: 42px; }
+  .navbar-default .navbar-nav>li>a { padding: 0px 20px 9px 0; }
+  .navbar-default .navbar-nav>li>a:hover { background-color: transparent; color: #E64B36; }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-default { height: 120px; }
+  .navbar-header .navbar-brand { height: 80px; padding: 45px 0 0 15px; font-size: 48px; }
+  .navbar-default .navbar-nav>li>a { padding: 10px 25px 9px 0; }
+}
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+    
+    <!-- NAVIGATION -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand scroll" href="#home">GURUKUL</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        <li><a style="font-family: verdana" href="#home" class="scroll">HOME</a></li>
+        <li><a style="font-family: verdana" href="#about" class="scroll">ABOUT</a></li>
+        <li><a style="font-family: verdana" href="#portfolio" class="scroll">INSTITUTES</a></li>
+        <li><a style="font-family: verdana" href="#contact" class="scroll">CONTACT</a></li>
+      <li><a style="font-family: verdana" href="login1.html" class="test-success">LOGIN|SIGNUP</a></li>
+       </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <!-- HOME -->
+<div2> 
+  <div id="home" class="content-section">
+    <div class="container">
+      <div id="example">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 style="margin-top: -3px; margin-bottom: 5px;"></h2>
+       
+         <form  action="">
+          <input type="text" class="search" placeholder="Enter your city" name="search">
+          <input type="text"  class="search" placeholder="Subject" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div2> 
+    
+<div class="row" style="margin-top: -580px;">
+  <div class="side">
+    <h1 style="margin-top: 5px;">Filter</h1>
+      <div class="filter">
+  <h3>Type Of Tuition</h3>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="online" onchange="change()"/>Online</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="offline" onchange="change()"/>Offline</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="home-tuition" onchange="change()"/>Home Tuition</label>
+  </div>
+  <h3>Accomodation Type</h3>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="hostel" onchange="change()"/>Hostel</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="pg" onchange="change()"/>PG</label>
+  </div>
+<h3>Facilities</h3>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="parking" onchange="change()"/>Parking</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="public-transport" onchange="change()"/>Near Public Transport</label>
+  </div> 
+  <div class="checkbox">
+   <label><input type="checkbox" rel="ac-class" onchange="change()"/>AC Classrooms</label>
+  </div>       
+</div>
+    
+  </div>
+  <div class="main">
+    <h1>Coaching Institutes Found</h1>
+      <div class="result">
+  <div class="online offline hostel parking public-transport ac-class">
+    <h1 style="text-align:left">Akash</h1>
+      <div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px" hspace=12; style="float: left"></p>
+    <p style="font-size: 140%; text-align: left; font-family: verdana;">Sameer Vihar, Ghaziabad, UP</p>
+</div>
+  </div>
+  <div class="online offline hostel parking public-transport ac-class"><br><br>
+    <h1 style="text-align:left"><br><br><br>Narayana</h1>
+      <div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px" hspace=12; style="float: left"></p>
+    <p style="font-size: 140%; text-align: left; font-family: verdana;">alpha beta gamma theta zeta pi</p>
+</div>
+  </div>
+  <div class="online offline hostel parking public-transport ac-class"><br><br>
+    <h1><br><br><br>Fitjee</h1>
+      <div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px" hspace=12; style="float: left"></p>
+    <p style="font-size: 140%; text-align: left; font-family: verdana;">alpha beta gamma theta zeta pi</p>
+</div>
+  </div>
+  <div class="online offline hostel parking public-transport ac-class"><br><br>
+    <h1><br><br><br>Bansal</h1><div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px" hspace=12; style="float: left"></p>
+    <p style="font-size: 140%; text-align: left; font-family: verdana;">alpha beta gamaa theta zeta pi</p>
+</div>
+  </div>
+    <div class="online offline hostel pg parking public-transport ac-class"><br><br>
+    <h1><br><br><br>Allen</h1><div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px" hspace=12; style="float: left"></p>
+    <p style="font-size: 140%; text-align: left; font-family: verdana;">Alpha beta Gama Theta zeta pi</p>
+</div>
+  </div>
+    <div class="offline hostel public-transport ac-class"><br><br>
+    <h1><br><br><br>Mittal</h1><div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px" hspace=12; style="float: left"></p>
+    <p style="font-size: 140%; text-align: left; font-family: verdana;">Alpha beta Gama Theta zeta pi</p>
+</div>
+  </div>
+    <div class="offline parking public-transport"><br><br>
+    <h1><br><br><br>Kota Academy</h1><div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px" hspace=12; style="float: left"></p>
+    <p style="font-size: 140%; text-align: left; font-family: verdana;">Alpha beta Gama Theta zeta pi</p>
+</div>
+  </div>
+    <div class="offline home-tuition"><br><br>
+    <h1><br><br><br>Rashmi Classes</h1><div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px" hspace=12; style="float: left"></p>
+    <p style="font-size: 140%; text-align: left; font-family: verdana;">Alpha beta gamma Theta zeta pi</p>
+</div>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+<script src="next-page.js"></script>
+</body>
+</html>
