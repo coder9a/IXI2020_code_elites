@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #f5515f , #05abe0);
+  background: linear-gradient(to right, #A594F9 , #6247AA);
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -83,7 +83,6 @@ img {
 }
 
 .window {
-    border-radius: 25px;
    padding-top: 30px;
   box-shadow: 0 0 100px  rgba(0,0,0,0.25);
   height: 560px;
@@ -92,8 +91,8 @@ img {
 }
 
 .header {
-    background: linear-gradient(to right, pink , yellow);
-  background: linear-gradient(to right, #f5515f , #05abe0);
+    background-image: linear-gradient(to right, red , yellow);
+  background: linear-gradient(to right, #9795EF , #9795EF);
   color: #FFF;
   height: 380px;
   left: 0;
@@ -152,7 +151,7 @@ img {
 }
 
 .footer {
-  background: linear-gradient(to right, #E5BDF6 , fdf5e6);
+  background: linear-gradient(to right, #E5BDF6 , #D8DEDE);
   bottom: 0;
   color: #FFF;
   left: 0;
